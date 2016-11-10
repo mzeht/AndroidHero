@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                tools:context=".MainActivity">
+    <com.wpmac.androidhero.unit3.view.TopBar
+        android:id="@+id/topBar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        custom:mleftBackground="@drawable/blue_button"
+        custom:mleftText="Back"
+        custom:mleftTextColor="#FFFFFF"
+        custom:mrightBackground="@drawable/blue_button"
+        custom:mrightText="More"
+        custom:mrightTextColor="#FFFFFF"
+        custom:mtitle="自定义标题"
+        custom:mtitleTextColor="#FFFFFF"
+        custom:mtitleTextSize="10sp" />
+
+
+</RelativeLayout>
