@@ -7,6 +7,9 @@ import android.view.View;
 
 import com.wpmac.androidhero.R;
 
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 
 /**
  * 第三章 Android控件架构与自定义控件详解
@@ -22,6 +25,7 @@ public class Unit3Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_unit3);
+        ButterKnife.bind(this);
 //        mIntent = new Intent(this, MyViewTestActivity.class);
     }
 
@@ -45,18 +49,26 @@ public class Unit3Activity extends AppCompatActivity {
         mIntent = new Intent(this, CircleProgressActivity.class);
         startActivity(mIntent);
     }
-//
+
+    //
     public void btnVolumeView(View view) {
-        mIntent=new Intent(this,VolumeViewActivity.class);
+        mIntent = new Intent(this, VolumeViewActivity.class);
         startActivity(mIntent);
     }
-//
+
+    //
     public void btnMyScrollView(View view) {
-        mIntent=new Intent(this,ScrollViewActivity.class);
+        mIntent = new Intent(this, ScrollViewActivity.class);
         startActivity(mIntent);
     }
 
     public void btnTopBar(View view) {
         startActivity(new Intent(this, TopBarTestActivity.class));
     }
+
+    @OnClick(R.id.viewgroup)
+    public void viewGroup() {
+        startActivity(new Intent(this, ViewGroupActivity.class));
+    }
+
 }

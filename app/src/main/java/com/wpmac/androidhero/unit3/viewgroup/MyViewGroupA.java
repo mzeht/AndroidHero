@@ -38,4 +38,6 @@ public class MyViewGroupA extends LinearLayout {
         Log.d("xys", "ViewGroupA onTouchEvent" + event.getAction());
         return super.onTouchEvent(event);
     }
+
+    //inspect
 }
