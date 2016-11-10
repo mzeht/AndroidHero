@@ -33,6 +33,8 @@
         </activity>
         <activity android:name=".unit3.ScrollViewActivity">
         </activity>
+        <activity android:name=".unit3.ViewGroupActivity">
+        </activity>
     </application>
 
 </manifest>
